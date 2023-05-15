@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <style> 
+    .words{
+        border: 5px solid black;
+        font-style: italic;
+    }
+    </style>
+	<title>Home</title>
+</head>
+
+<body>
+	<div class="words">Welcome to my final project for CMSC335
+    <br><br>
+    Please submit how this photo from space makes you feel.
+    <br><br>
+    There will be a different photo EVERYDAY!
+    <br><br>
+    It will be saved into a database and will NEVER...
+    <br><br>
+    be removed :)
+    </div>
+    <br>
+    <%- photo %>
+
+    <br><br>
+    <form action="http://localhost:5001/processed" method="post">
+    <label>Please enter your name ::: <input type="text" name="name"/></label>
+    <label> Enter how the photo made you feel ::: <input type="text" name="info"/></label>
+    <input type="reset"/>
+    <input type="submit" value="Submit"/>
+    </form>
+	
+</body>
+
+</html>
