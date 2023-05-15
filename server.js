@@ -9,7 +9,7 @@ require("dotenv").config({ path: path.resolve(__dirname, '.env') })
 
 const axios = require('axios');
 
-const portNumber = 5001
+const portNumber = 443
 const userName = process.env.MONGO_DB_USERNAME;
 const password = process.env.MONGO_DB_PASSWORD;
 const db = process.env.MONGO_DB_NAME;
